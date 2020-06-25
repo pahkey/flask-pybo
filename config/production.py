@@ -1,4 +1,3 @@
-import os
 from logging.config import dictConfig
 
 from config.default import *
@@ -31,6 +30,6 @@ dictConfig({
     },
     'root': {
         'level': 'INFO',
-        'handlers': ['wsgi']
+        'handlers': ['wsgi', 'file']
     }
 })
