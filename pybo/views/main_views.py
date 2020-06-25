@@ -11,4 +11,5 @@ def hello_pybo():
 
 @bp.route('/')
 def index():
+    3/0
     return redirect(url_for('question._list'))
