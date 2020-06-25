@@ -14,11 +14,6 @@ dictConfig({
         }
     },
     'handlers': {
-        'wsgi': {
-            'class': 'logging.StreamHandler',
-            'stream': 'ext://flask.logging.wsgi_errors_stream',
-            'formatter': 'default'
-        },
         'file': {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
@@ -30,6 +25,6 @@ dictConfig({
     },
     'root': {
         'level': 'INFO',
-        'handlers': ['wsgi', 'file']
+        'handlers': ['file']
     }
 })
